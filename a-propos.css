@@ -1,0 +1,486 @@
+
+/* =========================
+   VARIABLES ET RESET
+========================= */
+
+:root {
+    --beige: #EDE9E0;
+    --cream: #F8F7F3;
+    --sage: #A8B5A0;
+    --dark-green: #343D35;
+    --text: #555B53;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--dark-green);
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    min-height: 100px;
+    padding: 20px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cream);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    color: var(--dark-green);
+    letter-spacing: 1px;
+}
+
+.logo span,
+.footer-logo span {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-top: 3px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 12px;
+    color: var(--dark-green);
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #82947B;
+}
+
+.nav-button {
+    border: 1px solid var(--sage);
+    padding: 12px 20px;
+}
+
+.nav-button:hover {
+    background: var(--sage);
+    color: white;
+}
+
+
+/* =========================
+   ELEMENTS COMMUNS
+========================= */
+
+.eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #82947B;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background: var(--dark-green);
+    color: white;
+    padding: 15px 25px;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.button:hover {
+    background: #82947B;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO A PROPOS
+========================= */
+
+.about-hero {
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+    padding: 75px 9%;
+    background: var(--beige);
+}
+
+.about-hero-text {
+    max-width: 580px;
+}
+
+.about-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 4.5vw, 60px);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.about-hero h1 span {
+    color: #82947B;
+}
+
+.about-hero-text > p:not(.eyebrow) {
+    color: var(--text);
+    margin-bottom: 30px;
+    max-width: 470px;
+}
+
+.about-hero-image img {
+    height: 460px;
+    border-radius: 180px 180px 0 0;
+}
+
+
+/* =========================
+   PRESENTATION
+========================= */
+
+.presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    padding: 115px 12%;
+}
+
+.presentation-heading h2,
+.approach h2,
+.formation h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.presentation-content p {
+    color: var(--text);
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   APPROCHE
+========================= */
+
+.approach {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 90px;
+    padding: 100px 10%;
+    background: var(--beige);
+}
+
+.approach-image img {
+    height: 500px;
+    border-radius: 4px;
+}
+
+.approach-text p:not(.eyebrow) {
+    color: var(--text);
+    margin-bottom: 18px;
+}
+
+.approach h2 {
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   VALEURS
+========================= */
+
+.values {
+    padding: 110px 10%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.value-card {
+    padding: 40px;
+    background: var(--beige);
+    transition: .3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    background: #E4E9DF;
+}
+
+.value-card span {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #82947B;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    font-size: 14px;
+    color: var(--text);
+}
+
+
+/* =========================
+   CITATION
+========================= */
+
+.quote {
+    padding: 110px 10%;
+    background: var(--dark-green);
+    color: white;
+    text-align: center;
+}
+
+.quote .eyebrow {
+    color: #B8C6B0;
+}
+
+.quote h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(35px, 5vw, 55px);
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.quote p:last-child {
+    color: #D5DDD1;
+    max-width: 550px;
+    margin: auto;
+}
+
+
+/* =========================
+   FORMATION
+========================= */
+
+.formation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+    padding: 120px 10%;
+}
+
+.formation-text > p:not(.eyebrow) {
+    color: var(--text);
+    margin-top: 25px;
+}
+
+.formation-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formation-item {
+    display: flex;
+    gap: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #DADDD4;
+}
+
+.formation-item span {
+    font-family: 'Playfair Display', serif;
+    color: #82947B;
+    font-size: 27px;
+}
+
+.formation-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.formation-item p {
+    font-size: 13px;
+    color: var(--text);
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: var(--beige);
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 5vw, 60px);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.contact > p:not(.eyebrow) {
+    color: var(--text);
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background: var(--dark-green);
+    color: white;
+    font-size: 11px;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+}
+
+.footer-logo span {
+    color: #C7D1C1;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 25px 5%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .about-hero,
+    .presentation,
+    .approach,
+    .formation {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 75px 7%;
+    }
+
+    .about-hero-image img {
+        height: 380px;
+    }
+
+    .approach-image img {
+        height: 380px;
+    }
+
+    .values,
+    .contact {
+        padding: 75px 7%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .presentation-heading h2,
+    .approach h2,
+    .formation h2,
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .quote {
+        padding: 75px 7%;
+    }
+}
