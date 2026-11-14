@@ -22,12 +22,20 @@
     </a>
 
     <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="apropos.html">À propos</a>
-        <a href="#accompagnement">Accompagnement</a>
-        <a href="#seances">Les séances</a>
-        <a href="#contact" class="nav-button">Prendre contact</a>
-    </nav>
+  <ul>
+    <li class="btn-deroulant">
+      <a href="#accueil">Accueil</a>
+      <ul class="sous-menu">
+        <li><a href="#accompagnement">Accompagnement</a></li>
+        <li><a href="#seances">Les séances</a></li>
+        <li><a href="#galerie">Le cabinet </a></li>
+      </ul>
+    </li>
+    <li><a href="apropos.html">À propos</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="#contact" class="nav-button">Prendre contact</a></li>
+  </ul>
+</nav>
 </header>
 
 <main>
@@ -57,7 +65,7 @@
 
     <div class="hero-image">
         <img
-        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+        src="cabinet1.JPG"
         alt="Intérieur chaleureux et apaisant">
     </div>
 
@@ -67,42 +75,16 @@
 
 <section class="welcome">
 
-    <p class="eyebrow">UN ESPACE POUR VOUS</p>
+    <p class="eyebrow">QUI SUIS-JE ? </p>
 
-    <h2>Vous n'avez pas besoin<br>
-    d'avoir toutes les réponses.</h2>
+    <h2> Une écoute attentive, <br>
+        un accompagnement <br>
+       à votre rythme.</h2>
 
-    <p>
-        Consulter un psychologue est parfois le premier pas
-        vers une meilleure compréhension de soi.
-        Que vous traversiez une période difficile ou que
-        vous ressentiez simplement le besoin de parler,
-        vous trouverez ici un espace pour vous exprimer
-        librement et sans jugement.
-    </p>
-
-</section>
-
-<!-- A PROPOS -->
-
-<section class="about" id="apropos">
-
-    <div class="about-image">
-        <img
-        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000"
-        alt="Espace de consultation lumineux">
-    </div>
-
-    <div class="about-text">
-
-        <p class="eyebrow">QUI SUIS-JE ?</p>
-
-        <h2>Une écoute attentive,<br>
-        un accompagnement<br>
-        à votre rythme.</h2>
+    
 
         <p>
-            Je suis Sophie Martin, psychologue clinicienne
+            Je suis Dilara Dibek  psychologue clinicienne
             à Mons.
         </p>
 
@@ -118,6 +100,41 @@
             et la construction d'un accompagnement adapté
             à vos besoins.
         </p>
+
+        <a href="#contact" class="text-link">
+            Me contacter →
+        </a>
+    </p>
+
+</section>
+
+<!-- A PROPOS -->
+
+<section class="about" id="apropos">
+
+    <div class="about-image">
+        <img
+        src="loki.jpg"
+        alt="Spitz allemand noir">
+    </div>
+
+    <div class="about-text">
+
+        <p class="eyebrow"> LA CO-THERAPIE AVEC LOKI </p>
+
+        <h2>Si vous êtes accueillis par<br>
+        un petit Spitz Allemand <br> 
+        il s'agit de Loki.</h2>
+
+        <p>
+            Loki peut, lorsque vous le souhaitez et lorsque cela est adapté au travail thérapeutique, être présent à vos côtés durant les séances;
+        </p>
+
+        <p>
+            La présence d’un chien dans un contexte thérapeutique peut constituer un support complémentaire au travail psychologique. Les recherches sur les interventions assistées par le chien suggèrent notamment des effets intéressants sur le stress et l’anxiété, l’engagement dans la relation thérapeutique, les interactions sociales et certains aspects du bien-être. Des études explorent également son intérêt auprès de personnes ayant vécu des expériences traumatiques.
+        </p>
+
+        <p> Et surtout, Loki n’est jamais une obligation. Si vous préférez une séance sans lui, il restera tranquillement à la maison. </p>
 
         <a href="#contact" class="text-link">
             Me contacter →
@@ -252,7 +269,8 @@
             <span>02</span>
             <div>
                 <h3>Lieu</h3>
-                <p>Cabinet situé à Mons, Belgique.</p>
+                <p>Cabinet l'Envol de Soi situé Avenue d'Hyon, 107
+                 à 7000 Mons, Belgique.</p>
             </div>
         </div>
 
@@ -342,30 +360,35 @@
         Je vous invite à me contacter.
     </p>
 
-    <a href="mailto:contact@psychologue-mons.be"
-       class="button">
-        Envoyer un e-mail →
+    <a href="contact.html" class="button">
+    Prendre contact →
     </a>
 
     <div class="contact-infos">
 
         <div>
-            <h3>Adresse</h3>
-            <p>Mons, Belgique</p>
-            <p>Adresse exacte à compléter</p>
-        </div>
+    <h3>Adresse</h3>
+    <p>Centre L'Envol de Soi</p>
+    <p>Avenue d'Hyon 107</p>
+    <p>7000 Mons, Belgique</p>
+</div>
 
-        <div>
-            <h3>Contact</h3>
-            <p>contact@psychologue-mons.be</p>
-            <p>+32 XXX XX XX XX</p>
-        </div>
+<div>
+    <h3>Contact</h3>
+    <p>
+        <a href="mailto:dilaradibek.psychologue@gmail.com">
+            dilaradibek.psychologue@gmail.com
+        </a>
+    </p>
+    <p>
+        <a href="tel:+32491973513">0491 97 35 13</a>
+    </p>
+</div>
 
-        <div>
-            <h3>Consultations</h3>
-            <p>Sur rendez-vous</p>
-            <p>Horaires à confirmer</p>
-        </div>
+<div>
+    <h3>Consultations</h3>
+    <p>Sur rendez-vous uniquement</p>
+</div>
 
     </div>
 
@@ -390,7 +413,7 @@
     </div>
 
 </footer>
-
+<script src="contact.js" defer></script>
 </body>
 </html>
 
